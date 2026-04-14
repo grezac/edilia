@@ -1,0 +1,133 @@
+{
+    "total_elapsed_time": "42 m 35 s",
+    "generations": 1174.4,
+    "linear_stats": {
+        "mae_val": 1.185,
+        "std_mae_val": 0.027,
+        "mae_test": 1.314,
+        "std_mae_test": 0.02,
+        "mse_val": 2.393,
+        "std_mse_val": 0.09,
+        "mse_test": 2.797,
+        "std_mse_test": 0.051,
+        "r2_val": 0.9006,
+        "std_r2_val": 0.0037,
+        "r2_test": 0.878,
+        "std_r2_test": 0.0022,
+        "breakdown": {
+            "annual": {
+                "2023": 1.32,
+                "2024": 1.308
+            },
+            "seasonal": {
+                "winter": 1.1932,
+                "spring": 1.3658,
+                "summer": 1.1748,
+                "autumn": 1.523
+            }
+        },
+        "absolute_error_percentiles": {
+            "p50": 1.0782,
+            "p90": 2.8338,
+            "p95": 3.3493
+        },
+        "bias": -0.064,
+        "rate_1deg": 0.4681,
+        "rate_2deg": 0.7666,
+        "max_error": 5.469,
+        "extreme_threshold_5pct": -2.15,
+        "extreme_events_5pct": {
+            "pod": 0.5892,
+            "far": 0.1469,
+            "hss": 0.683,
+            "pss": 0.5837,
+            "n_events": 37.0
+        }
+    },
+    "lightGBM_stats": {
+        "mae_val": 1.242,
+        "std_mae_val": 0.015,
+        "mae_test": 1.266,
+        "std_mae_test": 0.028,
+        "mse_val": 2.645,
+        "std_mse_val": 0.077,
+        "mse_test": 2.623,
+        "std_mse_test": 0.103,
+        "r2_val": 0.8901,
+        "std_r2_val": 0.0032,
+        "r2_test": 0.8855,
+        "std_r2_test": 0.0045,
+        "breakdown": {
+            "annual": {
+                "2023": 1.2986,
+                "2024": 1.2326
+            },
+            "seasonal": {
+                "winter": 1.1756,
+                "spring": 1.3154,
+                "summer": 1.16,
+                "autumn": 1.4114
+            }
+        },
+        "absolute_error_percentiles": {
+            "p50": 1.0117,
+            "p90": 2.6997,
+            "p95": 3.2608
+        },
+        "bias": 0.083,
+        "rate_1deg": 0.493,
+        "rate_2deg": 0.7751,
+        "max_error": 5.201,
+        "extreme_threshold_5pct": -2.15,
+        "extreme_events_5pct": {
+            "pod": 0.6378,
+            "far": 0.1737,
+            "hss": 0.7064,
+            "pss": 0.6306,
+            "n_events": 37.0
+        }
+    },
+    "XGBoost_stats": {
+        "mae_val": 1.231,
+        "std_mae_val": 0.013,
+        "mae_test": 1.242,
+        "std_mae_test": 0.026,
+        "mse_val": 2.545,
+        "std_mse_val": 0.042,
+        "mse_test": 2.489,
+        "std_mse_test": 0.074,
+        "r2_val": 0.8943,
+        "std_r2_val": 0.0018,
+        "r2_test": 0.8914,
+        "std_r2_test": 0.0032,
+        "breakdown": {
+            "annual": {
+                "2023": 1.28,
+                "2024": 1.2038
+            },
+            "seasonal": {
+                "winter": 1.1338,
+                "spring": 1.2932,
+                "summer": 1.1474,
+                "autumn": 1.3926
+            }
+        },
+        "absolute_error_percentiles": {
+            "p50": 1.0064,
+            "p90": 2.6488,
+            "p95": 3.1294
+        },
+        "bias": -0.036,
+        "rate_1deg": 0.498,
+        "rate_2deg": 0.7956,
+        "max_error": 5.219,
+        "extreme_threshold_5pct": -2.15,
+        "extreme_events_5pct": {
+            "pod": 0.6216,
+            "far": 0.1728,
+            "hss": 0.6966,
+            "pss": 0.6147,
+            "n_events": 37.0
+        }
+    }
+}

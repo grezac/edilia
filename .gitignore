@@ -1,0 +1,5 @@
+# Exclude the contents of the folders, but keep the folders
+data/*
+!data/.gitkeep
+__pycache__/
+installCopie.py

@@ -1,0 +1,103 @@
+{
+    "SITES": {
+        "BIRMINGHAM": {
+            "id": 391229,
+            "name": "Birmingham",
+            "label": "birmingham",
+            "latitude": 52.42,
+            "longitude": -1.83
+        },
+        "BREST": {
+            "id": 391227,
+            "name": "Brest",
+            "label": "brest",
+            "latitude": 48.4442,
+            "longitude": -4.4117
+        },
+        "EDINBURGH": {
+            "id": 391231,
+            "name": "Edinburgh",
+            "label": "edinburgh",
+            "latitude": 55.9667,
+            "longitude": -3.21
+        },
+        "LYON": {
+            "id": 391225,
+            "name": "Lyon Saint-Exupéry",
+            "label": "lyon",
+            "latitude": 45.7264,
+            "longitude": 5.0778
+        },
+        "NICE": {
+            "id": 391226,
+            "name": "Nice",
+            "label": "nice",
+            "latitude": 43.6489,
+            "longitude": 7.2089
+        },
+        "PARIS": {
+            "id": 391228,
+            "name": "Paris Orly",
+            "label": "paris",
+            "latitude": 48.7167,
+            "longitude": 2.3842
+        },
+        "PLYMOUTH": {
+            "id": 391230,
+            "name": "Plymouth",
+            "label": "plymouth",
+            "latitude": 50.3539,
+            "longitude": -4.1208
+        },
+        "STRASBOURG": {
+            "id": 391224,
+            "name": "Strasbourg Entzheim",
+            "label": "strasbourg",
+            "latitude": 48.5492,
+            "longitude": 7.6403
+        }
+    },
+    "CONFIGS": {
+        "GENERIC_CONFIG": {
+            "data_source": "/data/METEO_daily.db",
+            "json_dir_name": "/data/outputs",
+            "window_size": 1,
+            "horizon": 1,
+            "seed": 1,
+            "time_unit": "day",
+            "test_period": [
+                "2023-01-01",
+                "2024-12-31"
+            ],
+            "working_period": [
+                "2004-01-01",
+                "2022-12-31"
+            ],
+            "evolution_settings": {
+                "population_size": 60,
+                "crossover_rate": 0.7,
+                "mutation_rate": 0.035,
+                "stop_criterion": "patience",
+                "stop_criterion_value": 60
+            },
+            "excluded_vars": [
+                "high_cloud_cover_daily_mean",
+                "low_cloud_cover_daily_mean",
+                "mean_sea_level_pressure_daily_mean",
+                "medium_cloud_cover_daily_mean",
+                "sea_surface_temperature_daily_mean"
+            ],
+            "train_split": 0.85,
+            "distance_metric": "BallTree",
+            "origin": "ERA5",
+            "rings": [
+                {
+                    "radius_min": 0,
+                    "radius_max": 540,
+                    "max_predictors": 90,
+                    "patience_stop": 60
+                }
+            ]
+        }
+    }
+}
