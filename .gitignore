@@ -1,6 +1,9 @@
 # Exclude the contents of the folders, but keep the folders
-data/**/*
+data/*
+data/outputs/*
+
 !data/.gitkeep
+!data/outputs/
 !data/outputs/.gitkeep
 
 # Ingore Python bytecode cache directories
